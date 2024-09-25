@@ -625,7 +625,15 @@ img {
   padding-left: 38px;
 }
 
+.div-input-icon {
+  position: relative;
+}
+
 .icon-user-data {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
   fill: #2e2f42;
 }
 
