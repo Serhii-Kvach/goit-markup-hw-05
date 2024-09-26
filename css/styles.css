@@ -503,6 +503,7 @@ img {
 .footer-social {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 
 .footer-social-text {
@@ -535,6 +536,65 @@ img {
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
+
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  display: flex;
+}
+
+.subscribe-input {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 8px 16px;
+  color: #31d0aa;
+  margin-right: 24px;
+}
+
+.subscribe-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.subscribe-btn {
+  display: flex;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  fill: #ffffff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+  background-color: #31d0aa;
+}
+
 /* =================================FOOTER=============================== */
 
 /* ================================MODAL WINDOW========================== */
@@ -549,6 +609,8 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -572,8 +634,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop:not(is-open).modal {
-  transform: translate(-50%, -50%) scale(1.5);
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -100%);
 }
 .modal-close-btn {
   display: flex;
@@ -754,3 +816,5 @@ img {
 .button-submit-form:hover {
   background-color: #404bbf;
 }
+
+/* ================================MODAL WINDOW========================== */
