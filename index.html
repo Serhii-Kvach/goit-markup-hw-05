@@ -469,14 +469,15 @@
         <div class="subscribe-form">
           <p class="subscribe-title">Subscribe</p>
           <form class="form-field">
-            <label for="subs-input"></label>
-            <input
-              class="subscribe-input"
-              type="email"
-              id="subs-input"
-              placeholder="E-mail"
-              required
-            />
+            <label class="subs-label" for="subs-input">
+              <input
+                class="subscribe-input"
+                type="email"
+                id="subs-input"
+                placeholder="E-mail"
+                required
+              />
+            </label>
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
@@ -518,7 +519,7 @@
               <input
                 class="input-form"
                 type="tel"
-                nama="user-tel"
+                name="user-tel"
                 id="user-tel"
                 required
               />
@@ -553,13 +554,14 @@
           </div>
           <div class="checkbox-field">
             <input
+              name="user-privacy"
               type="checkbox"
-              id="checkbox-privacy"
+              id="user-privacy"
               class="checkbox-default visually-hidden"
               value="true"
               required
             />
-            <label class="checkbox-privacy" for="checkbox-privacy">
+            <label class="checkbox-privacy" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="checkbox-img" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
